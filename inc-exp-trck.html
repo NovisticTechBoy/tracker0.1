@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRANSACTION TRACKER</title>
+    <link rel="stylesheet" href="inc-exp-trck.css">
+</head>
+<body>
+
+
+  <div class="incexpContainer">
+    <h1 class="onlyOne">NEW TRANSACTION</h1>
+<!--<fieldset><h2>BALANCE</h2>
+<h3>$0.00</h3></fieldset>
+
+<div class="income-div">
+<h4>INCOME</h4>
+<p class="income-adds-class" id="income-adds-id">+$0.00</p>
+</div>
+<div>
+<h4>EXPENSES</h4>
+<p class="expense-subT-class" id="expense-subT-id">-$0.00</p>
+</div> -->
+<fieldset>
+<h4>Add New Transaction..</h4>
+<form id="transaction-form">
+<div id="forText" class="for-text">
+  <label for="text">Transaction Name<br>
+
+  </label>
+    <input type="text" id="transacName" placeholder="transaction name..">
+</div>
+
+<div id="numerical" class="numerical-input">
+<label for="amount">Amount <br>
+</label>
+  <input type="number" id="expOrInc" placeholder="">
+</div>
+
+<br>
+<button id="transactionBtn">ADD TO TRANSACTION</button>
+
+</form>
+</fieldset>
+
+<!--BALANCE, INCOME AND EXPENSE FIELDSET -->
+<fieldset class="balanceIncExpFieldset">
+  
+    <h2>BALANCE: <span id="balance">$0.00</span></h2>
+
+    <div>
+    <p>INCOME: <span id="income">$0.00</span></p>
+    <label><input type="radio" name="type" value="income" checked></label>
+    <p>EXPENSE: <span id="expense">$0.00</span></p>
+    <label><input type="radio" name="type" value="expense"></label>
+</div>
+  </fieldset>
+  </div>
+
+  <fieldset class="transactionHistoryFieldset">
+<div class="transactionHistory">
+  <h1>TRANSACTION HISTORY</h1>
+    <div id="transactionHist"></div>
+</div>
+</fieldset>
+
+
+
+ <!-- <div>
+    <div class="svdtrns">
+      <h1>SAVED TRANSACTIONS</h1>
+      <fieldset></fieldset>
+    </div>
+  </div> -->
+
+    <script src="inc-exp-trck.js" defer></script>
+</body>
+</html>
+<!-- NEXT UPP....NAV BARS UPSTAIRS -->
+ 
